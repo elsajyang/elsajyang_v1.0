@@ -7,4 +7,3 @@ permalink: /about/
 
 This page tells you a little bit about me.
 
-view.encoding()
