@@ -4,6 +4,7 @@
     <meta charset="utf-8">
   </head>
   <body>
+    <p>These links were generated using inline style code.</p>
     <nav>
         {% for page in site.data.navigation %}
         <a href="{{ page.link }}" {% if page.url == page.link %}style="color: red;"{% endif %}>
@@ -11,5 +12,14 @@
         </a>
         {% endfor %}
     </nav>
+
+    <p>Meanwhile these links were generated using a sass class.</p>
+    <nav>
+            {% for page in site.data.navigation %}
+            <a href="{{ page.link }}" {% if page.url == page.link %}class="current"{% endif %}>
+                {{ page.name }}
+            </a>
+            {% endfor %}
+        </nav>
   </body>
 </html>
