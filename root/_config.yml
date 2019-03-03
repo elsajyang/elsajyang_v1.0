@@ -4,7 +4,7 @@
 title: Jekyll Resume
 description: Jekyll Resume is a mega simple resume theme for Jekyll.
 baseurl: ""
-url: ""
+url: "https://elsayang.github.io"
 name: Matt Couchman
 job: front end engineer
 location: Birmingham, UK
@@ -60,3 +60,4 @@ favicon_img_path: "imgs/favicon.ico"
 # Build settings
 markdown: kramdown
 permalink: pretty
+

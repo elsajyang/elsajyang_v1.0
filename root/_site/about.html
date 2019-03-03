@@ -12,10 +12,16 @@ footers, and navigation code.
     <head>
         <meta charset="utf-8">
         <title>About</title>
-        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <!doctype html>
+        <!-- Notes:
+1. Notice how _includes files do not have front matter.
+2. _includes files are usually small content bits we can reuse.
+Whereas layouts have more to do with the overall layout of the page.
+-->
+
+<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -32,24 +38,37 @@ footers, and navigation code.
             About
         </a>
         
+        <a href="/posts.html" >
+            Posts
+        </a>
+        
     </nav>
 
     <p>Meanwhile these links were generated using a sass class.</p>
     <nav>
-            
-            <a href="/" >
-                Home
-            </a>
-            
-            <a href="/about/index.html" >
-                About
-            </a>
-            
-        </nav>
+        
+        <a href="/" >
+            Home
+        </a>
+        
+        <a href="/about/index.html" >
+            About
+        </a>
+        
+        <a href="/posts.html" >
+            Posts
+        </a>
+        
+    </nav>
   </body>
 </html>
 
-        <h1 id="about-page">About page</h1>
+        <!--
+The permalink is not the best way to go about it.
+We should maintain a _config file for all the permalinks.
+-->
+
+<h1 id="about-page">About page</h1>
 
 <p>This page tells you a little bit about me.</p>
 

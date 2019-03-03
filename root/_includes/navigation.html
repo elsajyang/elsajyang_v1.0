@@ -13,7 +13,7 @@ Whereas layouts have more to do with the overall layout of the page.
     <p>These links were generated using inline style code.</p>
     <nav>
         {% for page in site.data.navigation %}
-        <a href="{{ page.permalink }}" {% if page.url == page.link %}style="color: red;"{% endif %}>
+        <a href="{{ site.baseurl}}{{ page.link }}" {% if page.url == page.link %}style="color: red;"{% endif %}>
             {{ page.name }}
         </a>
         {% endfor %}
@@ -22,7 +22,7 @@ Whereas layouts have more to do with the overall layout of the page.
     <p>Meanwhile these links were generated using a sass class.</p>
     <nav>
         {% for page in site.data.navigation %}
-        <a href="{{ page.permalink }}" {% if page.url == page.link %}class="current"{% endif %}>
+        <a href="{{ site.baseurl}}{{ page.link }}" {% if page.url == page.link %}class="current"{% endif %}>
             {{ page.name }}
         </a>
         {% endfor %}

@@ -2,3 +2,5 @@
   link: /
 - name: About
   link: /about/index.html
+- name: Posts
+  link: /posts.html
