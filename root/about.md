@@ -1,7 +1,6 @@
 ---
 layout: default
 title: About
-permalink: /about
 ---
 <!--
 The permalink is not the best way to go about it.
