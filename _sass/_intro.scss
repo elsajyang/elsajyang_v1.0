@@ -1,0 +1,26 @@
+.intro {
+    margin-bottom: ($spacer * 2);
+
+    &__pre, &__post {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    &__main {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        font-weight: bold;
+        margin: 10px 0 20px;
+
+        @media(min-width: 640px) {
+            font-size: 1.8rem;
+            max-width: 65%;
+        }
+    }
+}
+
+.social {
+    a {
+        margin-right: $spacer;
+    }
+}

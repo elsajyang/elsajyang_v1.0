@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="intro">
+        <p class="intro__pre">Hello</p>
+        <p class="intro__main">My name is <span>{{ site.name }}</span>, a {{ site.job }} who loves to learn</p>
+        <p class="intro__main">I think about {{ site.interests }} on a daily basis </p>
+        <p class="intro__main">I code in {{ site.languages }} </p>
+        <p class="intro__post">{{ site.location }}</p>
+    </div>
+
+    {% if site.github_username or site.codepen_username or site.twitter_username or site.email_address %}
+    <div class="social">
+        {% if site.github_username %}<a href="http://github.com/{{ site.github_username }}" target="_blank">GitHub</a>{% endif %}
+        {% if site.spotify_username %}<a href="https://open.spotify.com/user/coffeespirit/playlist/6dHkKHToLX8J9GiZSiiJSG?si=bZ55h0X_Tz6AfIsCRHaoPA" target="_blank">Spotify</a>{% endif %}
+        {% if site.email_address %}<a href="mailto:{{ site.email_address }}" target="_blank">Email</a>{% endif %}
+    </div>
+    {% endif %}
+</div>

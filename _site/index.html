@@ -10,9 +10,19 @@ footers, and navigation code.
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Home</title>
-        <link rel="stylesheet" href="/css/main.css">
+        <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home</title>
+    <meta name="description" content="A developer's developing website.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/rss+xml" title="Personal Website" href="http://localhost:4000/feed.xml">
+</head>
+
     </head>
     <body>
         <!-- Notes:
@@ -20,58 +30,55 @@ footers, and navigation code.
 2. _includes files are usually small content bits we can reuse.
 Whereas layouts have more to do with the overall layout of the page.
 -->
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <p>These links were generated using inline style code.</p>
-    <nav>
-        
-        <a href="/" >
-            Home
-        </a>
-        
-        <a href="/about" >
-            About
-        </a>
-        
-        <a href="/posts" >
-            Posts
-        </a>
-        
+<div class="container">
+    <nav class="navbar">
+            
+            <a href="/" >
+                Home
+            </a>
+            
+            <a href="/posts" >
+                Posts
+            </a>
+            
     </nav>
-
-    <p>Meanwhile these links were generated using a sass class.</p>
-    <nav>
-        
-        <a href="/" >
-            Home
-        </a>
-        
-        <a href="/about" >
-            About
-        </a>
-        
-        <a href="/posts" >
-            Posts
-        </a>
-        
-    </nav>
-  </body>
-</html>
-
+</div>
         <!doctype html>
-<html>
+<html lang = "en>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/main.scss">
     <title>Home</title>
   </head>
   <body>
-    <h1>it's coming together</h1>
+    <div class="container">
+    <div class="intro">
+        <p class="intro__pre">Hello</p>
+        <p class="intro__main">My name is <span>Elsa Yang</span>, a 3rd year CS undergraduate who loves to learn</p>
+        <p class="intro__main">I think about energy, waste, and education on a daily basis </p>
+        <p class="intro__main">I code in Python, Java, C, and now HTML and CSS </p>
+        <p class="intro__post">Berkeley, CA</p>
+    </div>
+
+    
+    <div class="social">
+        <a href="http://github.com/elsajyang" target="_blank">GitHub</a>
+        <a href="https://open.spotify.com/user/coffeespirit/playlist/6dHkKHToLX8J9GiZSiiJSG?si=bZ55h0X_Tz6AfIsCRHaoPA" target="_blank">Spotify</a>
+        <a href="mailto:elsajy@berkeley.edu" target="_blank">Email</a>
+    </div>
+    
+</div>
   </body>
 </html>
+
+
+
+        <div class="container">
+    <footer class="footer">
+        <p class="footer__title">Elsa Yang</p>
+    </footer>
+</div>
+
     </body>
 </html>

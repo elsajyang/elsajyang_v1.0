@@ -1,0 +1,12 @@
+// @name Footer
+// @description All footer styles
+
+.footer {
+    text-align: right;
+    //border-top: 1px solid #edefee;
+
+    &__title {
+        text-transform: lowercase;
+        letter-spacing: 2px;
+    }
+}

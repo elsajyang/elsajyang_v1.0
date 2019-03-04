@@ -10,9 +10,19 @@ footers, and navigation code.
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Posts</title>
-        <link rel="stylesheet" href="/css/main.css">
+        <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Posts</title>
+    <meta name="description" content="A developer's developing website.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/posts/">
+    <link rel="alternate" type="application/rss+xml" title="Personal Website" href="http://localhost:4000/feed.xml">
+</head>
+
     </head>
     <body>
         <!-- Notes:
@@ -20,59 +30,40 @@ footers, and navigation code.
 2. _includes files are usually small content bits we can reuse.
 Whereas layouts have more to do with the overall layout of the page.
 -->
-
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <p>These links were generated using inline style code.</p>
-    <nav>
-        
-        <a href="/" >
-            Home
-        </a>
-        
-        <a href="/about" >
-            About
-        </a>
-        
-        <a href="/posts" >
-            Posts
-        </a>
-        
+<div class="container">
+    <nav class="navbar">
+            
+            <a href="/" >
+                Home
+            </a>
+            
+            <a href="/posts" >
+                Posts
+            </a>
+            
     </nav>
+</div>
+        <div class="container">
+  <article class="section-title">Latest Posts</article>
 
-    <p>Meanwhile these links were generated using a sass class.</p>
-    <nav>
-        
-        <a href="/" >
-            Home
-        </a>
-        
-        <a href="/about" >
-            About
-        </a>
-        
-        <a href="/posts" >
-            Posts
-        </a>
-        
-    </nav>
-  </body>
-</html>
+  <ul>
+    
+      <li>
+        <h2><a href="/2019/03/03/creating-githubio/">Creating my github.io using Jekyll, from start to finish.</a></h2>
+        <p><div class="container">
+<h2><a href="/2019/03/03/creating-githubio/">Creating my github.io using Jekyll, from start to finish.</a></h2>
 
-        <h1>Latest Posts</h1>
-
-<ul>
-  
-    <li>
-      <h2><a href="/2019/03/03/creating-githubio/">Creating Githubio</a></h2>
-      <p><h1 id="creating-my-githubio-from-start-to-finish">Creating my github.io, from start to finish.</h1>
+</div>
 </p>
-    </li>
-  
-</ul>
+      </li>
+    
+  </ul>
+</div>
+        <div class="container">
+    <footer class="footer">
+        <p class="footer__title">Elsa Yang</p>
+    </footer>
+</div>
+
     </body>
 </html>

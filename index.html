@@ -3,12 +3,16 @@ layout: default
 title: Home
 ---
 <!doctype html>
-<html>
+<html lang = "en>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/main.scss">
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <h1>{{ "it's coming together" | downcase }}</h1>
+    {% include intro.html %}
   </body>
 </html>
+
+

@@ -1,0 +1,14 @@
+// @name Navbar
+// @description All navbar styles
+
+.navbar {
+    //border-bottom: 1px solid #edefee;
+    padding: ($spacer * 2) 0;
+    margin-bottom: ($spacer * 2);
+    
+    a {
+        margin-right: $spacer;
+        // padding: ($spacer * 10) 0 ($spacer * 3);
+        // margin-bottom: ($spacer * 3);
+    }
+}

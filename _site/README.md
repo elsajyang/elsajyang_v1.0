@@ -16,3 +16,8 @@ It's licensed under Creative-Commons.
 
 This theme makes use of the amazing <a href="http://fontawesome.io/">Font Awesome</a> icons.
 
+
+
+<!-- Sources
+1. Matt Gray: https://himatt.com/
+-->

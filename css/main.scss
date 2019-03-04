@@ -1,3 +1,23 @@
 ---
+# Main Sass file
 ---
-@import "styles"
+
+// Default spacing
+$spacer: 20px;
+
+.container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 $spacer;
+}
+
+// Import all partials from _sass
+@import
+    'reset',
+    'layout',
+    'typography',
+    'navbar',
+    'intro',
+    'footer',
+    'resume'
+;

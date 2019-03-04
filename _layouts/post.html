@@ -1,5 +1,4 @@
 ---
-layout: default
 ---
 <!--
 Jekyll: "post.html" exemplifies layout inheritance. The post 
@@ -9,12 +8,11 @@ layout outputs the title, date, author and content body,
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+      {% include head.html %}
   </head>
   <body>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-    {{ content }}
+      {% include navbar.html %}
+      {{ content }}
+      {% include footer.html %}
 </body>
 </html>
