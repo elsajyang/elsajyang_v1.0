@@ -9,6 +9,29 @@ $spacer: 20px;
     max-width: 860px;
     margin: 0 auto;
     padding: 0 $spacer;
+    padding-bottom: 80px; /* height of your footer */
+    display: block;
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+
+}
+
+p {
+    font-size: 18px;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+}
+
+ul {
+    list-style-type:square;
+    padding-left: $spacer;
 }
 
 // Import all partials from _sass
