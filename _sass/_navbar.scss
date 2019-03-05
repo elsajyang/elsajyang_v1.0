@@ -3,8 +3,10 @@
 
 .navbar {
     //border-bottom: 1px solid #edefee;
-    padding: ($spacer * 2) 0;
-    margin-bottom: ($spacer * 2);
+    max-width: 860px;
+    margin: 0 auto;
+    padding: ($spacer * 3) $spacer;
+    position: relative;
     
     a {
         margin-right: $spacer;

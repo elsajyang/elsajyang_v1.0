@@ -3,12 +3,11 @@
 2. _includes files are usually small content bits we can reuse.
 Whereas layouts have more to do with the overall layout of the page.
 -->
-<div class="container">
-    <nav class="navbar">
-            {% for page in site.data.navigation %}
-            <a href="{{ site.baseurl}}{{ page.link }}" {% if page.url == page.link %}class="current"{% endif %}>
-                {{ page.name }}
-            </a>
-            {% endfor %}
-    </nav>
-</div>
+
+<nav class="navbar">
+        {% for page in site.data.navigation %}
+        <a href="{{ site.baseurl}}{{ page.link }}" {% if page.url == page.link %}class="current"{% endif %}>
+            {{ page.name }}
+        </a>
+        {% endfor %}
+</nav>
