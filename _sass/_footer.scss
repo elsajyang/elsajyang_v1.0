@@ -2,11 +2,15 @@
 // @description All footer styles
 
 .footer {
-    text-align: right;
     //border-top: 1px solid #edefee;
+
+    position: absolute;
+    bottom: 30px;
+    //width: 100%;
 
     &__title {
         text-transform: lowercase;
+        font-size: 12px;
         letter-spacing: 2px;
     }
 }
