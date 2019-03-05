@@ -30,7 +30,7 @@ title: Posts
   <ul>
     {% for article in site.data.reading %}
       <li>
-        <h2><a href="{{ site.baseurl }}{{ article.link }}">{{ article.title }} <i>{{ article.author }}</i></a></h2>
+        <h2><a href="{{ site.baseurl }}{{ article.link }}" target="_blank">{{ article.title }} <i>{{ article.author }}</i></a></h2>
         <p>{{ article.excerpt }}</p>
       </li>
     {% endfor %}
