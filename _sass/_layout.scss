@@ -26,6 +26,7 @@
 
 h1 {
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 20px;
     letter-spacing: 1px;
     margin-top: $spacer;
@@ -39,7 +40,9 @@ p {
     margin-bottom: $spacer;
 }
 
+
 ul {
     list-style-type:square;
+    font-size: 18px;
     padding-left: $spacer;
 }
