@@ -23,5 +23,16 @@ title: Posts
       <h2><a href="https://triton.ml/blog/sentiment-analysis">Triton - Naive Bayes' Classifier: How to Build a Sentiment Analysis Program</a></h2>
     </li>
   </ul>
+</div>
 
+<div class="container">
+  <article class="section-title">Reading Material</article>
+  <ul>
+    {% for article in site.data.reading %}
+      <li>
+        <h2><a href="{{ site.baseurl }}{{ article.link }}">{{ article.title }} <i>{{ article.author }}</i></a></h2>
+        <p>{{ article.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
