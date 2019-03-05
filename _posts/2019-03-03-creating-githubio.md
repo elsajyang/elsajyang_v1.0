@@ -12,13 +12,13 @@ title: Creating my github.io using Jekyll, from start to finish.
 </p>
 
 <p>
-    This website is hosted by <a href="https://pages.github.com/">GitHub Pages</a>. A GitHub Page turns a GitHub repository into a site with the extension github.io. Between WordPress and GitHub Pages, I chose github.io because it <i>seemed</i> simpler and more doable. GitHub Pages mentioned using <b>Jekyll</b>, a <a href="https://www.quora.com/How-does-a-static-site-generator-like-Jekyll-work">static site generator</a>, so I gave it a shot. A static site generator, sometimes called a flat page or stationary page, is said to require no PHP scripting, no databases, nor server code. It is therefore safer, but less interactive. For more on Jekyll, scroll down to find the section <b>Choosing Jekyll</b>.
+    This website is hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. A GitHub Page turns a GitHub repository into a site with the extension github.io. Between WordPress and GitHub Pages, I chose github.io because it <i>seemed</i> simpler and more doable. GitHub Pages mentioned using <b>Jekyll</b>, a <a href="https://www.quora.com/How-does-a-static-site-generator-like-Jekyll-work" target="_blank">static site generator</a>, so I gave it a shot. A static site generator, sometimes called a flat page or stationary page, is said to require no PHP scripting, no databases, nor server code. It is therefore safer, but less interactive. For more on Jekyll, scroll down to find the section <b>Choosing Jekyll</b>.
 </p>
 
 <p>
     Like for all other projects:
     <ul>
-        <li>I used original docs (documentation) and guides, like <a href="https://help.github.com/en/categories/github-pages-basics">GitHub Pages Basics</a> and <a href="https://jekyllrb.com/docs/">Jekyll Docs</a></li>
+        <li>I used original docs (documentation) and guides, like <a href="https://help.github.com/en/categories/github-pages-basics" target="_blank">GitHub Pages Basics</a> and <a href="https://jekyllrb.com/docs/" target="_blank">Jekyll Docs</a></li>
         <li>I found a lot of answers on Stack Overflow.</li>
         <li>I had to be be flexible. Some of the googled solutions did not work for me, so I played around with the code.</li>
         <li>I looked at example Jekyll projects + code.</li>
@@ -33,7 +33,7 @@ title: Creating my github.io using Jekyll, from start to finish.
         <li>Ruby</li>
         <li>Jekyll</li>
         <li>Bundler</li>
-        <li>A text editor. <a href="https://code.visualstudio.com/">Visual Studio Code</a> for Mac has been one of my best recent downloads.</li>
+        <li>A text editor. <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> for Mac has been one of my best recent downloads.</li>
         <li>A browser for localhost. This is for viewing an example of your site on your computer. I use Google Chrome.</li>
     </ul>
 </p>
@@ -41,14 +41,11 @@ title: Creating my github.io using Jekyll, from start to finish.
 
 <h1>Downloading the newest version of Ruby for macOS using Homebrew</h1>
 <p>
-    To use Jekyll I had to download the newest version of Ruby.
-
-    I spent hours trying to figure out how to change the PATH so Ruby would default to the freshly downloaded version.
-
-    The <a href="https://stackoverflow.com/questions/54471291/how-to-use-the-homebrews-ruby-package-instead-of-the-ruby-package-that-comes-wi">solution</a> ended up being:
-
+    To use Jekyll I had to download the newest version of Ruby. I spent hours trying to figure out how to change the PATH so Ruby would default to the freshly downloaded version. The <a href="https://stackoverflow.com/questions/54471291/how-to-use-the-homebrews-ruby-package-instead-of-the-ruby-package-that-comes-wi" target="_blank">solution</a> ended up being:
     <script src="https://gist.github.com/elsajyang/842891a8298462dae92b2ea2e1460084.js"></script>
+</p>
 
+<p>
     The two other popular options for managing ruby and its many versions are to use <i>rvm</i> or <i>rbenv</i>. After my struggle, I ended up downloading rvm anyway.
 </p>
 <br>
@@ -57,7 +54,7 @@ title: Creating my github.io using Jekyll, from start to finish.
 <h1>Some information about bash</h1>
 <p>
 
-<a href="https://www.quora.com/What-is-bash_profile-and-what-is-its-use">Quora answer</a>
+<a href="https://www.quora.com/What-is-bash_profile-and-what-is-its-use" target="_blank">Quora answer</a>
 
 Login Shells (.bash_profile)
 
@@ -78,11 +75,11 @@ When BASH is invoked as a login shell, the following files are executed in the d
 
 <h1>Choosing Jekyll</h1>
 <p>
-    I chose Jekyll because it seemed easy to use. <a href="https://en.wikipedia.org/wiki/Jekyll_(software)">Jekyll</a> was written in Ruby by GitHub's cofounder Tom Preston-Werner, so I thought it would work well in conjunction to this GitHub-oriented project. To use Jekyll, one must download Jekyll and bundler, which may also be a process of its own.
+    I chose Jekyll because it seemed easy to use. <a href="https://en.wikipedia.org/wiki/Jekyll_(software)" target="_blank">Jekyll</a> was written in Ruby by GitHub's cofounder Tom Preston-Werner, so I thought it would work well in conjunction to this GitHub-oriented project. To use Jekyll, one must download Jekyll and bundler, which may also be a process of its own.
 </p>
 
 <p>
-    For me, the Jekyll docs were not enough. My experience with Jekyll was more trial-and-error, meaning I playing around with the front matter and syntax, learning how files were being generated, etc. to debug. Truthfully, I probably should have done some more research, like watch <a href="https://www.youtube.com/watch?v=BA_c3bGQXlQ">a Youtube video</a> or read about other site testing systems. (I spent a long time trying to figure out why my edits off of a free Jekyll theme from <a href="http://jekyllthemes.org"></a> could not display correctly.) Meanwhile, the video shows how to, at the very least, publish a testing page using a Jekyll theme.
+    For me, the Jekyll docs were not enough. My experience with Jekyll was more trial-and-error, meaning I playing around with the front matter and syntax, learning how files were being generated, etc. to debug. Truthfully, I probably should have done some more research, like watch <a href="https://www.youtube.com/watch?v=BA_c3bGQXlQ" target="_blank">a Youtube video</a> or read about other site testing systems. (I spent a long time trying to figure out why my edits off of a free Jekyll theme from <a href="http://jekyllthemes.org" target="_blank"></a> could not display correctly.) Meanwhile, the video shows how to, at the very least, publish a testing page using a Jekyll theme.
 </p>
 
 <p>
@@ -96,7 +93,7 @@ When BASH is invoked as a login shell, the following files are executed in the d
 
 <h1>Following the Jekyll docs as a start</h1>
 <p>
-    To learn the basics step by step, the <a href="https://jekyllrb.com/docs/">Jekyll Docs</a> worked well for me. I recommend following it to learn how to structure your files. You create an <code>index.html</code> file and learn the basic HTML file structure. You learn about <b>front matter</b>, a way to set variables of a file, sort of like an object and its instance variables. And you learn how to employ include and layout files.
+    To learn the basics step by step, the <a href="https://jekyllrb.com/docs/" target="_blank">Jekyll Docs</a> worked well for me. I recommend following it to learn how to structure your files. You create an <code>index.html</code> file and learn the basic HTML file structure. You learn about <b>front matter</b>, a way to set variables of a file, sort of like an object and its instance variables. And you learn how to employ include and layout files.
 </p>
 
 <p>
@@ -123,7 +120,7 @@ Errors
     <li>it was a mere “permalink: /posts” as opposed to “permalink: /posts/“. will kill someone.
     a bug. /foo.html => /foo, which wasn’t possible for me
     /foo/index.html =? /foo/ only this worked for me
-    <a href="https://github.com/jekyll/jekyll/issues/6709">Permalinks</a></li>
+    <a href="https://github.com/jekyll/jekyll/issues/6709" target="_blank">Permalinks</a></li>
 </ul>
 </p>
 <br>
@@ -148,11 +145,11 @@ A <b>navbar</b> (navigation bar) allows a user to go from page to page on your s
 <h1>Resources</h1>
 <p>
 <ul>
-    <li><a href="https://www.quora.com/How-does-a-static-site-generator-like-Jekyll-work">How Jekyll, a static site generator, works. <i>Quora.</i></a></li>
-    <li><a href="https://stackoverflow.com/questions/54471291/how-to-use-the-homebrews-ruby-package-instead-of-the-ruby-package-that-comes-wi">Updating Ruby: How to add to a Path to ~/.bash_profile. <i>Stack Overflow.</i></a></li>
-    <li><a href="https://www.quora.com/What-is-bash_profile-and-what-is-its-use">What is bash profile and what is its use? <i>Quora.</i></a></li>
-    <li><a href="https://en.wikipedia.org/wiki/Jekyll_(software)">Jekyll. <i>Wikipedia.</i></a></li>
-    <li><a href="https://github.com/jekyll/jekyll/issues/6709">Jekyll Permalinks. <i>GitHub Help.</i></a></li>
+    <li><a href="https://www.quora.com/How-does-a-static-site-generator-like-Jekyll-work" target="_blank">How Jekyll, a static site generator, works. <i>Quora.</i></a></li>
+    <li><a href="https://stackoverflow.com/questions/54471291/how-to-use-the-homebrews-ruby-package-instead-of-the-ruby-package-that-comes-wi" target="_blank">Updating Ruby: How to add to a Path to ~/.bash_profile. <i>Stack Overflow.</i></a></li>
+    <li><a href="https://www.quora.com/What-is-bash_profile-and-what-is-its-use" target="_blank">What is bash profile and what is its use? <i>Quora.</i></a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Jekyll_(software)" target="_blank">Jekyll. <i>Wikipedia.</i></a></li>
+    <li><a href="https://github.com/jekyll/jekyll/issues/6709" target="_blank">Jekyll Permalinks. <i>GitHub Help.</i></a></li>
 </ul>
 </p>
 
