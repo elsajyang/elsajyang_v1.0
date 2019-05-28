@@ -37,7 +37,8 @@ lastfm_username: your_lastfm_username_goes_here
 blog_url: "/posts"
 email: elsajy@berkeley.edu
 public_key_url: "https://raw.pastebin.com/LINK-TO-PUBLIC-KEY"
-reading_material: "https://www.cnn.com/2019/05/28/asia/malaysia-plastic-waste-return-intl/index.html"
+reading_material: Malaysia to return plastic waste dumped by UK, US, etc.
+reading_material_url: "https://www.cnn.com/2019/05/28/asia/malaysia-plastic-waste-return-intl/index.html"
 
 
 avatar: yes
